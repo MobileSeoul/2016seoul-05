@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_spitem2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#7ca8e8"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:textSize="25dp" />

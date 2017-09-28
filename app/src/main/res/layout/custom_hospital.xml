@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:id="@+id/layout_customHospital">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:visibility="gone"
+        android:id="@+id/hospitalList_id"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:visibility="gone"
+        android:id="@+id/hospitalList_dutyEmcls"
+        android:layout_below="@+id/hospitalList_id"
+        android:layout_toEndOf="@+id/hospitalList_englishAddr" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="New Text"
+        android:id="@+id/hospitalList_dutyTel1"
+        android:layout_alignTop="@+id/hospitalList_dutyTel2"
+        android:layout_toEndOf="@+id/hospitalList_dutyAddr"
+        android:layout_marginStart="29dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:visibility="gone"
+        android:id="@+id/hospitalList_dutyTel2"
+        android:layout_below="@+id/hospitalList_dutyEmcls"
+        android:layout_alignStart="@+id/hospitalList_latiitude" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:visibility="gone"
+        android:id="@+id/hospitalList_latiitude"
+        android:layout_below="@+id/hospitalList_dutyTel1"
+        android:layout_toEndOf="@+id/hospitalList_dutyTel1"
+        android:layout_marginStart="54dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:visibility="gone"
+        android:id="@+id/hospitalList_longitude"
+        android:layout_below="@+id/hospitalList_dutyTel1"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50m"
+        android:textColor="#7ca8e8"
+        android:textSize="20sp"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:id="@+id/hospitalList_dutyAddr"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="16"
+                    android:layout_height="match_parent" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="263"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Gangnamcity Pharmacy"
+                            android:singleLine="true"
+                            android:textSize="17dp"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/hospitalList_englishName" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/hospitalList_dutyEmclsName"
+                            android:text="50m"
+                            android:textColor="#7ca8e8"
+                            android:textSize="17dp"
+                            android:layout_gravity="right"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="1F, 416, Gangnam-daero, Gangnam-gu, Seoul, Korea hahahaha"
+                        android:singleLine="true"
+                        android:textSize="12dp"
+                        android:textColor="#9fa0a0"
+                        android:id="@+id/hospitalList_englishAddr" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="81"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/hospitalList_btnCall"
+                        android:background="@drawable/call"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:focusable="false"
+                        android:clickable="false"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

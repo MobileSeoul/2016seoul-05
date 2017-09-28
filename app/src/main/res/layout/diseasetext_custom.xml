@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_centerVertical="true"
+    android:gravity="center_vertical"
+    android:id="@+id/diseasetext_custom">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:textSize="13dp"
+        android:text="   Name : " />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:textColor="#000000"
+        android:layout_height="35dp"
+        android:text="New Text"
+        android:gravity="center_vertical"
+        android:textSize="13dp"
+        android:id="@+id/diseaseNameView" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_weight="1.5"
+        android:textSize="13dp"
+        android:gravity="center_vertical"
+        android:text="Status : " />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:textSize="13dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:text="New Text\nkkkkkkkk"
+        android:id="@+id/diseaseStatusView" />
+</LinearLayout>

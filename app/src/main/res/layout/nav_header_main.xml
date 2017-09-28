@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="570dp"
+    android:background="@drawable/border"
+    android:id="@+id/layout_drawer"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="36"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="288"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_width="45dp"
+                        android:layout_height="51dp"
+                        android:id="@+id/SplashLogo"
+                        android:background="@drawable/logo"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SplashLogo2"
+                        android:background="@drawable/logo2"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/SplashLogo"
+                        android:layout_marginStart="7dp">
+                    </ImageView>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/screen"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11dp"
+                        android:text=" Lock screen disease notifier"
+                        android:textColor="#e9ffffff"/>
+                    <Switch
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switch_lock"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0."/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="36"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/border"
+        android:layout_weight="8"
+        android:orientation="vertical">
+        />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/border"
+            android:layout_weight="2"
+            android:textSize="14dp"
+            android:id="@+id/btn_drawer1"
+            android:textAllCaps="false"
+            android:textColor="#9fa0a0"
+            android:text="Medical history questionnaire"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textSize="14dp"
+            android:background="@drawable/border"
+            android:id="@+id/btn_drawer2"
+            android:textAllCaps="false"
+            android:textColor="#9fa0a0"
+            android:text="Emergency management video"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textSize="14dp"
+            android:background="@drawable/border"
+            android:id="@+id/btn_drawer3"
+            android:textAllCaps="false"
+            android:textColor="#9fa0a0"
+            android:text="Notice"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:background="@drawable/border"
+            android:id="@+id/btn_drawer4"
+            android:textColor="#9fa0a0"
+            android:text="User guide"/>
+
+    </LinearLayout>
+
+</LinearLayout>

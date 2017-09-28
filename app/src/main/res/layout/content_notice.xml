@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".notice.NoticeActivity"
+    tools:showIn="@layout/app_bar_notice">
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/notice_listView"
+    android:background="#ffffff"
+    android:divider="#fd4c37"
+    android:dividerHeight="0.5dp"></ListView>
+    <LinearLayout
+        android:layout_below="@+id/notice_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#fd4c37"></LinearLayout>
+</RelativeLayout>

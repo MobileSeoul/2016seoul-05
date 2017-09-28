@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+                android:id="@+id/notice_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[Notice]"
+                android:textSize="15dp"
+                android:textColor="#fd4c37"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"></LinearLayout>
+
+            <TextView
+                android:id="@+id/notice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seoul E Com is up and running."
+                android:textSize="15dp"
+                android:textColor="#9fa0a0"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.45"></LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+                <TextView
+                    android:id="@+id/notice_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016.09.18"
+                    android:textSize="9dp"
+                    android:textColor="#9fa0a0"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"></LinearLayout>
+    </LinearLayout>
+</LinearLayout>

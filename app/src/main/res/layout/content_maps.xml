@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="seoul.emergency.bbibbo.map.MapsActivity"
+    tools:showIn="@layout/app_bar_maps">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="250"
+        android:name="com.google.android.gms.maps.SupportMapFragment">
+        <ImageButton
+            android:id="@+id/new_position_hospital"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reloca"/>
+    </fragment>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="seoul.emergency.bbibbo.HospitalFragment"
+        android:id="@+id/hospitalFragment_place"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="245" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65.5"
+        android:background="@drawable/border2"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_home"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon_home"
+                android:background="@drawable/home"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_home"
+                android:text="HOME"
+                android:textSize="10dp"
+                android:textColor="#9fa0a0"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_call1"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon_call1"
+                android:background="@drawable/call1"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_call1"
+                android:text="Emergency call"
+                android:textSize="10dp"
+                android:textColor="#9fa0a0"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_call2"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon_call2"
+                android:background="@drawable/call2"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_call2"
+                android:text="Information center"
+                android:textSize="10dp"
+                android:textColor="#9fa0a0"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_m"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon_m"
+                android:background="@drawable/m"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_m"
+                android:text="Sos message"
+                android:textSize="10dp"
+                android:textColor="#9fa0a0"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

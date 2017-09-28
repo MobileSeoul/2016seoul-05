@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp">
+
+        <com.google.android.youtube.player.YouTubeThumbnailView
+            android:id="@+id/thumbnail"
+            android:layout_width="fill_parent"
+            android:layout_height="164dp"
+            android:src="@drawable/no_thumbnail"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:tint="#99000000"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgBtn"
+            android:background="@drawable/start"
+            android:layout_gravity="center"
+            android:layout_marginTop= "74dp"
+            android:onClick="onClick"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:layout_marginTop="40dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="title_activity_maps"></string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_main">Main</string>
+
+
+    <string-array name="blood_types">
+        <item>RH+ / A</item>
+        <item>RH+ / B</item>
+        <item>RH+ / O</item>
+        <item>RH+ / AB</item>
+        <item>RH- / A</item>
+        <item>RH- / B</item>
+        <item>RH- / O</item>
+        <item>RH- / AB</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_questionnaire"></string>
+    <string name="title_activity_pharmacy_map"></string>
+    <string name="title_activity_aed_map"></string>
+    <string name="error_player">There was an error initializing the YouTubePlayer(%1$s)</string>
+</resources>

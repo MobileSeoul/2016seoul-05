@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerArray">
+        <item>Any near by</item>
+        <item>English</item>
+        <item>Russian</item>
+        <item>German</item>
+        <item>Japanese</item>
+        <item>Chinese</item>
+        <item>French</item>
+    </string-array>
+</resources>
